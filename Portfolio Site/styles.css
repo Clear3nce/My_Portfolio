@@ -1,184 +1,133 @@
 /* Start Global Rules */
 * {
     box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'poppins', sans-serif;
+
 }
 
 body {
-    background-color: white;
-    font-family: 'monospace', sans-serif;
-    min-width: 375px !important;
-}   
-
-.content {
-    background: url(./Images/Chess_Backgroun.jpg);
-    background-repeat: no-repeat;
+    color: rgb(white);
+    /* background-image: url(./Images/chess3.jpg);
     background-size: cover;
-    opacity:0.9;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    color:white;
+    background-repeat: no-repeat; */
     
-    padding: 0;
-    margin: 0;
 }
+.header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:20px 10%;
+  background:transparent;
+  display:flex;
+  justify-content: space-between; 
+  align-items: center;
+  z-index: 100;
+}
+.logo{
+  position:relative;
+  font-size:25px;
+  color:white;
+  text-decoration: none;
+  font:weight;
 
-.container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* Small */
-  @media (min-width: 768px) {
-    .container {
-      width: 750px;
-    }
+}
+.navbar a{
+  display:inline-block;
+  font-size:24px;
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  margin: left 40px;
+  margin-right: 10px;
+  transition:3s;
+
+}
+.navbar a:hover{
+  color:aqua;
+
+
+}
+  .home{
+    color: rgb(190, 190, 190);
+    position:relative;
+    width:100%;
+    justify-content:space-between;
+    height:100vh;
+    background-image: url(./Images/chess3.jpg);
+    /* background: no-repeat; */
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items:center;
+    padding-left: 50%;
+    /* padding: 30% 20% 40%;
+    margin-top: 300px; */
+  } 
+
+  .home-content {
+    /* background-color: aliceblue; */
+    max-width: 100%;
+    max-height: 100%;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 
-  /* Medium */
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
+  .home-sci a {
+    font-size: 40px;
+    margin-top: 20x;
+    /* color: black; */
+    color: rgb(190, 190, 190);
   }
-  /* Large */
-  @media (min-width: 1200px) {
-    .container {
-      width: 1170px;
-    }
+
+  .home-content h3 {
+    font-size: 40px;
   }
-  /* End Global Rules */
-  
-  /* Start Landing Page */
-  .landing-page header {
-    min-height: 80px;
-    display: flex;
+
+  .home-content h1 {
+    font-size: 60px;
+    font-weight: 600;
   }
-  @media (max-width: 767px) {
-    .landing-page header {
-      min-height: auto;
-      display: initial;
-    }
-  }
-  .landing-page header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  @media (max-width: 767px) {
-    .landing-page header .container {
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
-  .landing-page header .logo {
-    color: #c4baca;
-    font-style: monospace;
-    text-transform: uppercase;
+
+  .home-content p {
     font-size: 20px;
   }
-  @media (max-width: 767px) {
-    .landing-page header .logo {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-  }
-  .landing-page header .links {
-    display: flex;
-    align-items: center;
-  }
-  @media (max-width: 767px) {
-    .landing-page header .links {
-      text-align: center;
-      gap: 10px;
-    }
-  }
-  .landing-page header .links li {
-    margin-left: 30px;
-    color: #5d5d5d;
-    cursor: pointer;
-    transition: .3s;
-  }
-  @media (max-width: 767px) {
-    .landing-page header .links li {
-      margin-left: auto;
-    }
-  }
+.about{
+  margin-top: 10px;
+  min-height: 100vh;
+  min-width:100%;
+  background-image: url(./Images/Edit_Chess.png);
+    /* background: no-repeat; */
+    background-size:cover;
+    background-position: center;
 
-  .landing-page .content .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 140px;
-    min-height: calc(100vh - 80px);
-  }
-  @media (max-width: 767px) {
-    .landing-page .content .container {
-      gap: 0;
-      min-height: calc(100vh - 101px);
-      justify-content: center;
-      flex-direction: column-reverse;
-    }
-  }
-  @media (max-width: 767px) {
-    .landing-page .content .info {
-      text-align: center;
-      margin-bottom: 15px 
-    }
-  }
-  .landing-page .content .info h1 {
-    color: #5d5d5d;
-    font-size: 44px;
-  }
-  .landing-page .content .info p {
-    margin: 0;
-    line-height: 1.6;
-    font-size: 15px;
-    color: #5d5d5d;
-  }
-  .landing-page .content .info button {
-    border: 0;
-    border-radius: 20px;
-    padding: 12px 30px;
-    margin-top: 30px;
-    cursor: pointer;
-    color: #FFF;
-    background-color: #6c63ff;
-  }
-  .landing-page .content .image img {
-    max-width: 100%;
-    /* padding: 20px; */
-    margin: 20px;
-    opacity: 0.5;
-    border: 2px rgb(56, 56, 56) solid;
-    border-radius: 50%;
-    /* z-index: 1; */
-  }
-  /* End Landing Page */
-
-
-  .content, .content1, #school {
-    max-width: 100%;
-    min-height: 100vh;
-    min-width: 375px !important;
-  }
-  
-.content1 {
-    /* background: url(./Images/Chess_Img_2.jpg); */
-    background-image: repeating-conic-gradient(rgb(226, 25, 25) 10%, rgb(230, 230, 25) 20%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.9;
 }
-
-#para {
-    background-color: rgba(58, 58, 58, 0.301);
-    color: rgb(0, 0, 0);
-    padding: 30px;
-    border-radius: 8px;
+.portfolio{
+  margin-top: 10px;
+   min-height: 100vh;
+  min-width:100%;
 }
+.skills{
+   min-height: 100vh;
+  margin-top: 10px;
+  min-width:100%;
+  background-image: url(./Images/Chess_Backgroun.jpg);
+    /* background: no-repeat; */
+    background-size:cover;
+    background-position: center;
+}
+.contact{
+   min-height: 100vh;
+  min-width:100%;
+  margin-top: 10px;
+  background-image: url(./Images/piccc.jpg);
+    /* background: no-repeat; */
+    background-size:cover;
+    background-position: center;
+
+}
+/* div {
+  max-height: 100vh;
+} */
