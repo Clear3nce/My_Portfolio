@@ -9,7 +9,6 @@ body {
     min-width: 375px !important;
 }   
 
-
 .content {
     background: url(./Images/Chess_Backgroun.jpg);
     background-repeat: no-repeat;
@@ -40,6 +39,7 @@ ul {
       width: 750px;
     }
   }
+
   /* Medium */
   @media (min-width: 992px) {
     .container {
