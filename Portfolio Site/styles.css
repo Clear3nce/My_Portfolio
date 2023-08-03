@@ -8,7 +8,8 @@ body {
     font-family: 'monospace', sans-serif;
     min-width: 375px !important;
 }   
-    
+
+
 .content {
     background: url(./Images/Chess_Backgroun.jpg);
     background-repeat: no-repeat;
