@@ -1,19 +1,14 @@
-/* Start Global Rules */
 * {
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-    font-family: 'poppins', sans-serif;
-
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'poppins', sans-serif;
 }
 
 body {
-    color: rgb(white);
-    /* background-image: url(./Images/chess3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; */
-    
+  color: rgb(white);
 }
+
 .header{
   position:fixed;
   top:0;
@@ -25,15 +20,27 @@ body {
   justify-content: space-between; 
   align-items: center;
   z-index: 100;
+  background-color: rgba(114, 114, 114, 0.603);
 }
+
 .logo{
+  color:white;
+  font-size: 14px;
+  font-family: Verdana;
+  width: 50px;
+  height: 50px;
+  border-radius: 45%;
+}
+
+.logoo{
   position:relative;
-  font-size:25px;
+  font-size:30px;
   color:white;
   text-decoration: none;
   font:weight;
-
+  opacity: 1.1;
 }
+
 .navbar a{
   display:inline-block;
   font-size:24px;
@@ -45,89 +52,148 @@ body {
   transition:3s;
 
 }
+
 .navbar a:hover{
   color:aqua;
-
-
 }
-  .home{
-    color: rgb(190, 190, 190);
-    position:relative;
-    width:100%;
-    justify-content:space-between;
-    height:100vh;
-    background-image: url(./Images/chess3.jpg);
-    /* background: no-repeat; */
-    background-size:cover;
-    background-position: center;
-    display: flex;
-    align-items:center;
-    padding-left: 50%;
-    /* padding: 30% 20% 40%;
-    margin-top: 300px; */
-  } 
 
-  .home-content {
-    /* background-color: aliceblue; */
-    max-width: 100%;
-    max-height: 100%;
-    padding-bottom: 0;
-    padding-top: 0;
-  }
+.home{
+  color: rgb(190, 190, 190);
+  position:relative;
+  width:100%;
+  justify-content:space-between;
+  height:100vh;
+  background-image: url(./Images/chess3.jpg);
+  background-size:cover;
+  background-position: center;
+  display: flex;
+  align-items:center;
+  padding-left: 50%;
+} 
 
-  .home-sci a {
-    font-size: 40px;
-    margin-top: 20x;
-    /* color: black; */
-    color: rgb(190, 190, 190);
-  }
+.home-content {
+  max-width: 100%;
+  max-height: 100%;
+  padding-bottom: 0;
+  padding-top: 0;
+}
 
-  .home-content h3 {
-    font-size: 40px;
-  }
+.home-sci a {
+  font-size: 40px;
+  margin-top: 20x;
+  color: rgb(190, 190, 190);
+}
 
-  .home-content h1 {
-    font-size: 60px;
-    font-weight: 600;
-  }
+.home-content h3 {
+  font-size: 40px;
+}
 
-  .home-content p {
-    font-size: 20px;
-  }
+.home-content h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.home-content p {
+  font-size: 20px;
+}
+
 .about{
+  min-height: 100vh;
+  min-width:100%;
+  background-image: url(./Images/chief.jfif);
+    color:rgb(0, 0, 0);
+    font-size: 35px;
+}
+
+.ME{
+  background-color:aqua;
+  font-size: 25px;
+  display:inline;
+}
+
+.mee{
+  background-color:aqua;
+  font-size: 25px;
+  display: inline;
+  color:black;
+}
+
+.chess{
+  background-color: yellow;
+  font-size: 30;
+  display:inline;
+}
+
+.portfolio{
   margin-top: 10px;
   min-height: 100vh;
   min-width:100%;
-  background-image: url(./Images/Edit_Chess.png);
-    /* background: no-repeat; */
-    background-size:cover;
-    background-position: center;
+  background-image:url(./Images/Photo_1691153488841.png) ;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
 
-}
-.portfolio{
-  margin-top: 10px;
-   min-height: 100vh;
-  min-width:100%;
-}
 .skills{
-   min-height: 100vh;
-  margin-top: 10px;
+  min-height: 100vh;
   min-width:100%;
-  background-image: url(./Images/Chess_Backgroun.jpg);
-    /* background: no-repeat; */
-    background-size:cover;
-    background-position: center;
+  background-image: url(./Images/Photo_1691153488841.png);
+  font-size: 25px;
+  background-size:cover;
+  background-position: center;
+  position: relative;
 }
-.contact{
-   min-height: 100vh;
-  min-width:100%;
-  margin-top: 10px;
-  background-image: url(./Images/piccc.jpg);
-    /* background: no-repeat; */
-    background-size:cover;
-    background-position: center;
 
+.TechnicalSkills{
+  font-family:monospace ;
 }
-/* div {
-  max-height: 100vh;
-} */
+
+.proffessi{
+  color:rgb(0, 0, 0);
+}
+
+.proskills{
+  color:blue;
+  font-family: Verdana;
+  font-size: 28px;
+  
+}
+
+.quote{
+  font-size: 30px;
+  color:black;
+  background-color:chocolate;
+  display:inline;
+  justify-content: center;
+  align-items: center;
+}
+
+.programs{
+  font-size: 28px;
+  color:aqua;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact{
+  min-height: 100vh;
+  min-width:100%;
+  background-image: url(./Images/Photo_1691153488841.png);
+  background-size:cover;
+  background-position: center;
+}
+
+.numbers{
+  font-size: 35px;
+  color:blue;
+}
+
+.Cio{
+  font-size: 55px;
+  color:blue;
+}
+
+.AQ{
+  color:aliceblue;
+  font-size: 27px;
+}
