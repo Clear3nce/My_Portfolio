@@ -1,56 +1,55 @@
 * {
   box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
   margin:0;
   padding:0;
-  font-family: 'poppins', sans-serif;
 }
 
 body {
-  color: rgb(white);
+  color: rgb(255,255,255);
 }
 
 .header{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  padding:20px 10%;
-  background:transparent;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.342);
   display:flex;
   justify-content: space-between; 
-  align-items: center;
+  left:0;
+  padding:20px 10%;
+  position:fixed;
+  top:0;
+  width:100%;
   z-index: 100;
-  background-color: rgba(114, 114, 114, 0.603);
 }
 
 .logo{
-  color:white;
-  font-size: 14px;
-  font-family: Verdana;
-  width: 50px;
-  height: 50px;
   border-radius: 45%;
+  color:white;
+  font-family: Verdana;
+  font-size: 14px;
+  height: 50px;
+  width: 50px;
 }
 
 .logoo{
-  position:relative;
-  font-size:30px;
   color:white;
+  font-size:30px;
+  opacity: 0.9;
+  position:relative;
   text-decoration: none;
-  font:weight;
-  opacity: 1.1;
+  font-weight: 100;
+ 
 }
 
 .navbar a{
+  color:white;
   display:inline-block;
   font-size:24px;
-  color:white;
-  text-decoration:none;
   font-weight:600;
-  margin: left 40px;
+  margin-left: 40px;
   margin-right: 10px;
+  text-decoration:none;
   transition:3s;
-
 }
 
 .navbar a:hover{
@@ -58,30 +57,36 @@ body {
 }
 
 .home{
-  color: rgb(190, 190, 190);
-  position:relative;
-  width:100%;
-  justify-content:space-between;
-  height:100vh;
+  align-items:center;
   background-image: url(./Images/chess3.jpg);
   background-size:cover;
   background-position: center;
+  color: rgb(190, 190, 190);
   display: flex;
-  align-items:center;
+  justify-content:space-between;
+  height:100vh;
   padding-left: 50%;
-} 
+  position:relative;
+  width:100%;
+}
+
+.portfolio, .skills, .contact{
+  background-image: url(./Images/Photo_1691153488841.png);
+  background-position: center;
+  background-size:cover;
+}
 
 .home-content {
-  max-width: 100%;
   max-height: 100%;
+  max-width: 100%;
   padding-bottom: 0;
   padding-top: 0;
 }
 
 .home-sci a {
-  font-size: 40px;
-  margin-top: 20x;
   color: rgb(190, 190, 190);
+  font-size: 40px;
+  margin-top: 20px;
 }
 
 .home-content h3 {
@@ -89,8 +94,8 @@ body {
 }
 
 .home-content h1 {
-  font-size: 60px;
   font-weight: 600;
+  font-size: 60px;
 }
 
 .home-content p {
@@ -98,102 +103,162 @@ body {
 }
 
 .about{
+  background-color: rgb(109, 97, 97);
+  background-position: center;
+  background-size:cover;
+  color:rgb(255, 255, 255);
+  font-size: 30px;
   min-height: 100vh;
   min-width:100%;
-  background-image: url(./Images/chief.jfif);
-    color:rgb(0, 0, 0);
-    font-size: 35px;
+  padding:20px;
+}
+
+.image_{
+  width:220px;
+  height:220px;
+  margin-left:40%;
+  border-radius: 20%;
+  border: 4px gray solid;
 }
 
 .ME{
-  background-color:aqua;
+  display:inline-block;
   font-size: 25px;
-  display:inline;
-}
-
-.mee{
-  background-color:aqua;
-  font-size: 25px;
-  display: inline;
-  color:black;
+  margin-left:125px;
 }
 
 .chess{
   background-color: yellow;
-  font-size: 30;
+  color:black;
   display:inline;
+  font-size: 30px;
+  padding:10px;
 }
 
 .portfolio{
+  font-size: 30px;
   margin-top: 10px;
   min-height: 100vh;
   min-width:100%;
-  background-image:url(./Images/Photo_1691153488841.png) ;
-  background-size: cover;
-  background-position: center;
+  padding:20px;
   position: relative;
+}
+
+.wethinkcode1{
+  border-radius: 10%;
+  font-size: 35px;
+  height:350px;
+  margin-left:140px ;
+  margin-top: 20px;
+  width:350px;
+}
+.wethinkcode2{
+  border-radius: 10%;
+  font-size: 35px;
+  height:370px;
+  margin-left: 140px;
+  margin-top: 20px;
+  width:370px;
+}
+.wethink{
+  background-color: rgba(66, 39, 39, 0.356);
+  color:white;
+  margin-left: 110px;
+  font-size:medium;
 }
 
 .skills{
-  min-height: 100vh;
-  min-width:100%;
-  background-image: url(./Images/Photo_1691153488841.png);
-  font-size: 25px;
-  background-size:cover;
-  background-position: center;
-  position: relative;
+    font-size: 25px;
+    min-height: 100vh;
+    min-width:100%;
+    padding:31px;
+    position: relative;
 }
 
+.all{
+    display:inline-table;
+}
 .TechnicalSkills{
-  font-family:monospace ;
+      font-family:monospace ;
+      font-size: 22px;
 }
 
 .proffessi{
   color:rgb(0, 0, 0);
+  font-size: 22px;
 }
-
 .proskills{
-  color:blue;
+  color:rgb(255, 255, 255);
   font-family: Verdana;
   font-size: 28px;
   
 }
 
 .quote{
-  font-size: 30px;
-  color:black;
-  background-color:chocolate;
-  display:inline;
-  justify-content: center;
-  align-items: center;
+    align-items: center;
+    background-color:chocolate;
+    color:black;
+    display:inline;
+    font-size: 38px;
+    justify-content: center;
+    padding:10px;
 }
 
 .programs{
-  font-size: 28px;
-  color:aqua;
-  justify-content: center;
   align-items: center;
+  color:rgb(255, 255, 255);
+  font-size: 28px;
+  justify-content: center;
+}
+.javascript{
+  border-radius: 10%;
+  margin-left: 140px;
+  height:170px;
+  width:170px;
+}
+.python{
+  border-radius: 10%;
+  margin-left: 140px;
+  height:170px;
+  width:170px;
+}
+.Cplus{
+  border-radius: 10%;
+  margin-left:140px;
+  height:170px;
+  width:170px;
 }
 
-.contact{
+.teamw{
+  border-radius: 10%;
+  margin-left: 40%;
+  height:170px;
+  width:170px;
+}
+
+.contact{   
   min-height: 100vh;
   min-width:100%;
-  background-image: url(./Images/Photo_1691153488841.png);
-  background-size:cover;
-  background-position: center;
+  padding:20px;
 }
 
 .numbers{
-  font-size: 35px;
   color:blue;
+  font-size: 35px;
 }
 
 .Cio{
+  color:blue;    
   font-size: 55px;
-  color:blue;
 }
-
 .AQ{
   color:aliceblue;
   font-size: 27px;
+}
+
+.top_headings {
+  padding-left: 40%;
+  padding-bottom: 20px;
+  font-size: 50px;
+  font-weight: 700;
 }
